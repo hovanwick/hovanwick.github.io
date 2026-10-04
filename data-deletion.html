@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Deletion — FlowKit</title>
+<meta name="description" content="How to disconnect TikTok, YouTube or Facebook from FlowKit and delete the data it stores.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">FlowKit</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="data-deletion.html" aria-current="page">Data Deletion</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <article class="content">
+      <h1>Data Deletion Instructions</h1>
+      <p class="lead">FlowKit stores only the tokens and account identifiers needed to publish to accounts you
+        connected, in local files on the owner's computer. Here is how to remove them.</p>
+
+      <h2>1. Revoke access on the platform</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Platform</th><th scope="col">Where to revoke</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TikTok</td>
+              <td>TikTok app → Profile → menu → Settings and privacy → Security → apps with access to your
+                account → FlowKit → Remove access.</td>
+            </tr>
+            <tr>
+              <td>YouTube / Google</td>
+              <td><a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> →
+                FlowKit → Delete all connections.</td>
+            </tr>
+            <tr>
+              <td>Facebook</td>
+              <td>Facebook → Settings and privacy → Settings → Business integrations → FlowKit → Remove.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Revoking makes every token FlowKit holds for that account stop working immediately.</p>
+
+      <h2>2. Delete the local data</h2>
+      <p>On the computer running FlowKit, delete the token file of the platform from the
+        <code>output/_shared/</code> folder:</p>
+      <ul>
+        <li><code>tiktok_token.json</code> (TikTok)</li>
+        <li><code>youtube_token.json</code> (YouTube)</li>
+        <li><code>facebook_page.json</code> (Facebook)</li>
+      </ul>
+
+      <h2>3. Ask us to delete it</h2>
+      <p>You can also email <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a> with the subject
+        "FlowKit data deletion" and the platform name. We delete the data within 30 days and confirm by
+        email.</p>
+
+      <div class="note">
+        <p>Videos you already published are not removed by these steps. Delete them on TikTok, YouTube or
+          Facebook directly.</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 FlowKit · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+      <a href="data-deletion.html">Data Deletion</a></p>
+  </div>
+</footer>
+</body>
+</html>

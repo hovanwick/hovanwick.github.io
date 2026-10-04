@@ -1,20 +1,85 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FlowKit</title>
-<style>
-  body { font-family: Inter, "Segoe UI", Arial, sans-serif; font-size: 16px; line-height: 1.6;
-         max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #202124; background: #F9F9F9; }
-  h1 { font-size: 36px; margin: 0 0 8px; }
-  a { color: #1A73E8; }
-</style>
+<title>FlowKit — publish my own videos to TikTok, YouTube and Facebook</title>
+<meta name="description" content="FlowKit is a personal, self-hosted tool that publishes videos its owner creates to the owner's own TikTok account, YouTube channel and Facebook Page.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>FlowKit</h1>
-  <p>FlowKit is a personal tool that uploads videos I create to my own YouTube channel
-     using the YouTube Data API. It is not offered to other users.</p>
-  <p><a href="privacy.html">Privacy Policy</a></p>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">FlowKit</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="data-deletion.html">Data Deletion</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <h1>Publish the videos I make to my own social accounts</h1>
+      <p class="lead">FlowKit is a personal, self-hosted tool. It renders short educational videos on my
+        computer and, after I review and approve each one, posts it to my own TikTok account,
+        YouTube channel and Facebook Page through the platforms' official APIs.</p>
+      <div class="actions">
+        <a class="button" href="privacy.html">Privacy Policy</a>
+        <a class="button secondary" href="terms.html">Terms of Service</a>
+      </div>
+    </section>
+
+    <h2 class="section-title">How it works</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h3>1. Create</h3>
+        <p>A vertical 9:16 video is rendered locally from my own script, images and narration.</p>
+      </div>
+      <div class="card">
+        <h3>2. Review</h3>
+        <p>I watch the video, edit the caption and approve it. Nothing is posted without that approval.</p>
+      </div>
+      <div class="card">
+        <h3>3. Publish</h3>
+        <p>FlowKit uploads the approved video to the accounts I connected, then shows me the post links.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Platforms</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h3>TikTok</h3>
+        <p>Login Kit and the Content Posting API: uploads a video as a draft to my TikTok inbox, or posts it
+          directly to my profile with the caption and privacy level I chose.</p>
+      </div>
+      <div class="card">
+        <h3>YouTube</h3>
+        <p>YouTube API Services (YouTube Data API v3): uploads the video to my channel with its title,
+          description, tags and thumbnail.</p>
+      </div>
+      <div class="card">
+        <h3>Facebook</h3>
+        <p>Meta Graph API: publishes the video as a Reel or a video on a Facebook Page I manage.</p>
+      </div>
+    </div>
+
+    <div class="section-title note">
+      <p><strong>Not a public service.</strong> FlowKit has no sign-up and no other users. Only the owner's
+        own accounts are connected, and all tokens stay on the owner's computer.
+        Contact: <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 FlowKit · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+      <a href="data-deletion.html">Data Deletion</a></p>
+  </div>
+</footer>
 </body>
 </html>
